@@ -24,5 +24,5 @@ rm -rf "$temp_dir"
 # Create a new deployment for your CodeDeploy application
 aws deploy create-deployment \
   --application-name aws-ec2-starter \
-  --deployment-group-name AwsEc2StarterDeploymentGroup \
+  --deployment-group-name AppDeploymentGroup \
   --s3-location bucket=aws-ec2-starter,key=application_package.zip,bundleType=zip
